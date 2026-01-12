@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-white overflow-hidden">
+    <div className="min-h-screen bg-white overflow-hidden bg-[url('background.png')] bg-cover bg-center">
       <div className="w-140 h-60 transform translate-x-[30vh] translate-y-[20vh] flex flex-col gap-6 items-start px-10 py-10 ">
         <h1 className="text-6xl font-bold font-serif text-gray-800">
           Take student

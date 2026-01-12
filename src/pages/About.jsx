@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="h-[110vh] w-full ">
+    <div className="h-[110vh] w-full bg-[url('background.png')] bg-cover bg-center">
       <div className="h-120 w-80 flex justify-end items-end transform translate-x-[22vh] translate-y-[18vh] rounded-tl-full rounded-tr-full rounded-b-full border border-red-500 p-4">
         <div className="h-120 w-80 bg-blue-400 flex justify-end items-end transform -translate-x-[0vh] translate-y-[0vh] rounded-tl-full rounded-tr-full rounded-b-full border border-red-300 p-4">
           <img
