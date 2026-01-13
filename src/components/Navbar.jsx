@@ -60,7 +60,7 @@ const Navbar = () => {
 
           {/* Register Button */}
           <div className="h-10 w-30 border-2 border-blue-900 rounded-tl-2xl rounded-br-2xl flex items-center justify-center cursor-pointer transform translate-x-[4vh] translate-y-[2vh]">
-            <button className="bg-white text-black px-8 py-2 font-bold transition duration-200">
+            <button className="bg-white text-black px-8 py-2 font-bold transition duration-200 cursor-pointer">
               Register
             </button>
           </div>

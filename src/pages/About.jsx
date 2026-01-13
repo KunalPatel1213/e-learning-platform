@@ -27,7 +27,7 @@ const About = () => {
           by step and achieve better results.
         </p>
         <div className="h-10 w-45 border-2 border-blue-900 rounded-tl-2xl rounded-br-2xl flex items-center justify-center cursor-pointer transform translate-x-[0vh] translate-y-[6vh] bg-blue-300">
-          <button className=" text-black  px-8 py-2 font-bold transition duration-200">
+          <button className=" text-black  px-8 py-2 font-bold transition duration-200 cursor-pointer" >
             LEARN NOW <i class="fa-solid fa-arrow-right-long"></i>
           </button>
         </div>

@@ -12,43 +12,37 @@ const PaperDetail = () => {
           learning journey.
         </p>
         {/* paper details */}
-  <div className="font-serif text-xl font-normal text-center m-6 p-4 translate-y-[5vh] flex flex-row justify-center gap-4 ">
-  <a
-    href=""
-    className="text-black px-6 py-2 font-bold border rounded-tr-2xl rounded-bl-2xl border-blue-400 transition duration-700 ease-in-out cursor-pointer hover:bg-blue-400 hover:text-white"
+<div className="font-serif text-xl font-normal text-center m-6 p-4 translate-y-[5vh] flex flex-row justify-center gap-4">
+  <button
+    className="text-black px-6 py-2 font-bold border border-blue-400 rounded-tr-2xl rounded-bl-2xl cursor-pointer transition-colors duration-300 ease-in-out hover:bg-blue-400 hover:text-white"
   >
     All Courses
-  </a>
-  <a
-    href=""
-    className="text-black px-6 py-2 font-bold border rounded-tr-2xl rounded-bl-2xl border-blue-400 transition duration-700 ease-in-out cursor-pointer hover:bg-blue-400 hover:text-white"
+  </button>
+  <button
+    className="text-black px-6 py-2 font-bold border border-blue-400 rounded-tr-2xl rounded-bl-2xl cursor-pointer transition-colors duration-300 ease-in-out hover:bg-blue-400 hover:text-white"
   >
     Competitive Exams
-  </a>
-  <a
-    href=""
-    className="text-black px-6 py-2 font-bold border rounded-tr-2xl rounded-bl-2xl border-blue-400 transition duration-700 ease-in-out cursor-pointer hover:bg-blue-400 hover:text-white"
+  </button>
+  <button
+    className="text-black px-6 py-2 font-bold border border-blue-400 rounded-tr-2xl rounded-bl-2xl cursor-pointer transition-colors duration-300 ease-in-out hover:bg-blue-400 hover:text-white"
   >
     Engineering/Technical
-  </a>
-  <a
-    href=""
-    className="text-black px-6 py-2 font-bold border rounded-tr-2xl rounded-bl-2xl border-blue-400 transition duration-700 ease-in-out cursor-pointer hover:bg-blue-400 hover:text-white"
+  </button>
+  <button
+    className="text-black px-6 py-2 font-bold border border-blue-400 rounded-tr-2xl rounded-bl-2xl cursor-pointer transition-colors duration-300 ease-in-out hover:bg-blue-400 hover:text-white"
   >
     Medical
-  </a>
-  <a
-    href=""
-    className="text-black px-6 py-2 font-bold border rounded-tr-2xl rounded-bl-2xl border-blue-400 transition duration-700 ease-in-out cursor-pointer hover:bg-blue-400 hover:text-white"
+  </button>
+  <button
+    className="text-black px-6 py-2 font-bold border border-blue-400 rounded-tr-2xl rounded-bl-2xl cursor-pointer transition-colors duration-300 ease-in-out hover:bg-blue-400 hover:text-white"
   >
     University/College
-  </a>
-  <a
-    href=""
-    className="text-black px-6 py-2 font-bold border rounded-tr-2xl rounded-bl-2xl border-blue-400 transition duration-700 ease-in-out cursor-pointer hover:bg-blue-400 hover:text-white"
+  </button>
+  <button
+    className="text-black px-6 py-2 font-bold border border-blue-400 rounded-tr-2xl rounded-bl-2xl cursor-pointer transition-colors duration-300 ease-in-out hover:bg-blue-400 hover:text-white"
   >
     School Level
-  </a>
+  </button>
 </div>
 
         {/* Courses */}
