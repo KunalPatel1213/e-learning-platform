@@ -5,16 +5,19 @@ import About from './pages/About'
 import PaperDetail from './pages/PaperDetail'
 import Benifit from './pages/Benifit'
 import Footer from './pages/Footer'
+import Register from './pages/Register'
 
 const App = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <Home />
       <About/>
       <PaperDetail />
       <Benifit />
-      <Footer />
+      <Footer /> */}
+
+      <Register />
     </div>
   )
 }
