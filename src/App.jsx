@@ -6,6 +6,7 @@ import PaperDetail from './pages/PaperDetail'
 import Benifit from './pages/Benifit'
 import Footer from './pages/Footer'
 import Register from './pages/Register'
+import Login from './pages/Login'
 
 const App = () => {
   return (
@@ -15,9 +16,9 @@ const App = () => {
       <About/>
       <PaperDetail />
       <Benifit />
-      <Footer /> */}
-
-      <Register />
+      <Footer />
+      <Register /> */}
+      <Login />
     </div>
   )
 }
