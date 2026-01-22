@@ -8,6 +8,7 @@ import Footer from './pages/Footer';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import { Routes, Route, useLocation } from "react-router-dom";
+import Comminity from './pages/Comminity';
 
 const App = () => {
   const location = useLocation();
@@ -42,12 +43,14 @@ const App = () => {
 
   return (
     <div>
-      <Navbar user={user} />
+      {/* <Navbar user={user} />
       <Home />
       <About />
       <PaperDetail />
       <Benifit />
-      <Footer />
+      <Footer /> */}
+
+      <Comminity/>
     </div>
   );
 };
