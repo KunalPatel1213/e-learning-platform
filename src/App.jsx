@@ -7,7 +7,7 @@ import Benifit from './pages/Benifit';
 import Footer from './pages/Footer';
 import Register from './pages/Register';
 import Login from './pages/Login';
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";  // 
 import Comminity from './pages/Comminity';
 
 const App = () => {
@@ -25,7 +25,7 @@ const App = () => {
     window.addEventListener('storage', loadUser);
     return () => window.removeEventListener('storage', loadUser);
   }, []);
- 
+
   if (location.pathname === "/register") {
     return (
       <Routes>
@@ -41,16 +41,22 @@ const App = () => {
     )
   }
 
+  if(location.pathname === '/community'){   
+    return(
+      <Routes>
+        <Route path='/community' element={<Comminity /> } />
+      </Routes>
+    )
+  }
+
   return (
     <div>
-      {/* <Navbar user={user} />
+      <Navbar user={user} />
       <Home />
       <About />
       <PaperDetail />
       <Benifit />
-      <Footer /> */}
-
-      <Comminity/>
+      <Footer />
     </div>
   );
 };

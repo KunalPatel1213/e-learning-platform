@@ -54,7 +54,7 @@ const Navbar = ({ user }) => {
             <a href="home" className="text-gray-700 hover:text-blue-600">Home</a>
             <a href="about" className="text-gray-700 hover:text-blue-600">About</a>
             <a href="PaperDetail" className="text-gray-700 hover:text-blue-600">Paper Detail</a>
-            <a href="Community" className="text-gray-700 hover:text-blue-600">Community</a>
+            <Link to="/community" className="text-gray-700 hover:text-blue-600">Community</Link>
             <a href="Dashboard" className="text-gray-700 hover:text-blue-600">Dashboard</a>
           </div>
 
@@ -81,7 +81,8 @@ const Navbar = ({ user }) => {
             <a href="home" className="text-gray-700 hover:text-blue-600">Home</a>
             <a href="about" className="text-gray-700 hover:text-blue-600">About</a>
             <a href="PaperDetail" className="text-gray-700 hover:text-blue-600">Paper Detail</a>
-            <a href="Community" className="text-gray-700 hover:text-blue-600">Community</a>
+            <a href="Community" className="text-gray-700 hover:text-blue-600">
+            </a>
             <a href="Dashboard" className="text-gray-700 hover:text-blue-600">Dashboard</a>
           </div>
         )}
