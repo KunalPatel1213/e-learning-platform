@@ -1,22 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 const Comminity = () => {
-  const [text, setText] = useState("")
+  const [text, setText] = useState("");
 
   const handleChange = (e) => {
     // 500 characters limit
     if (e.target.value.length <= 500) {
-      setText(e.target.value)
+      setText(e.target.value);
     }
-  }
+  };
 
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div className="flex flex-col justify-center items-center px-4 sm:px-6 lg:px-12 py-8">
+      
       {/* Input box */}
-      <div className='h-[30vh] w-[80vh] flex justify-center items-center pt-10 relative'>
+      <div className="w-full max-w-2xl flex flex-col relative mb-8">
         <div className="relative w-full">
           <input
-            className="border-2 h-[7vh] rounded-2xl w-full pr-12 px-4"
+            className="border-2 rounded-2xl w-full h-12 sm:h-14 px-4 pr-12 text-base sm:text-lg"
             type="text"
             placeholder="What's on your mind"
             value={text}
@@ -25,13 +26,13 @@ const Comminity = () => {
         </div>
 
         {/* Character counter */}
-        <a className="absolute bottom-2 right-20 -translate-y-7 text-2xl">
+        <span className="absolute bottom-2 right-20 text-sm sm:text-base text-gray-600">
           {text.length}/500
-        </a>
+        </span>
 
         {/* Button fixed at bottom-right */}
         <button
-          className='bg-blue-500 text-white text-2xl px-6 py-2 h-[5vh] w-[8vh] absolute bottom-4 right-4 -translate-y-3.5 cursor-pointer'
+          className="bg-blue-500 text-white text-sm sm:text-lg px-4 sm:px-6 py-2 rounded-lg absolute bottom-2 right-2 cursor-pointer disabled:opacity-50"
           disabled={text.length === 0}
         >
           Post
@@ -39,21 +40,31 @@ const Comminity = () => {
       </div>
 
       {/* User integration */}
-      <div className='h-[10vh] w-[50vh] -translate-x-30 flex items-center gap-4'>
+      <div className="w-full max-w-xl flex items-center gap-4 mb-6">
         <span
-          className="h-[10vh] w-[10vh] rounded-full mt-8  
-               bg-[url('/bg/user.webp')] bg-cover bg-center cursor-pointer inline-block">
-        </span>
-        <h4 className='text-black font-bold mt-8 cursor-pointer font-Poppins'>
+          className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-[url('/bg/user.webp')] bg-cover bg-center cursor-pointer inline-block"
+        ></span>
+        <h4 className="text-black font-bold cursor-pointer font-Poppins text-base sm:text-lg">
           What is E-Learnign-Platform
         </h4>
       </div>
- 
-      <p className='h-[50vh] w-[100vh] font-Poppins text-gray-700 mt-4 translate-x-15'>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum mollitia vel cupiditate animi id reiciendis possimus veritatis sit recusandae! Cupiditate, corrupti? Aliquid ullam, numquam error repudiandae quae quasi inventore, distinctio quis neque tempore iste saepe ipsam molestias aut odio officia debitis ducimus nam. Iure, perspiciatis debitis! Asperiores ex doloribus optio provident maiores, iste ullam dolorem quo nostrum rerum suscipit architecto nesciunt quibusdam, quae dolore sequi vero neque repellendus dignissimos! Cupiditate porro voluptatem adipisci, fuga optio beatae officiis ullam error! Itaque, beatae non cum numquam ut blanditiis accusamus facilis deleniti iusto, aspernatur quibusdam deserunt quia commodi, officiis odio tempore...
+
+      {/* Post content */}
+      <p className="w-full max-w-3xl font-Poppins text-gray-700 text-sm sm:text-base leading-relaxed">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum mollitia
+        vel cupiditate animi id reiciendis possimus veritatis sit recusandae!
+        Cupiditate, corrupti? Aliquid ullam, numquam error repudiandae quae quasi
+        inventore, distinctio quis neque tempore iste saepe ipsam molestias aut
+        odio officia debitis ducimus nam. Iure, perspiciatis debitis! Asperiores
+        ex doloribus optio provident maiores, iste ullam dolorem quo nostrum
+        rerum suscipit architecto nesciunt quibusdam, quae dolore sequi vero
+        neque repellendus dignissimos! Cupiditate porro voluptatem adipisci, fuga
+        optio beatae officiis ullam error! Itaque, beatae non cum numquam ut
+        blanditiis accusamus facilis deleniti iusto, aspernatur quibusdam
+        deserunt quia commodi, officiis odio tempore...
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Comminity
+export default Comminity;

@@ -2,11 +2,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="min-h-screen w-full bg-[url('background.png')] bg-cover bg-center flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20 py-12">
+    <div className="min-h-screen w-full bg-[url('background.png')] bg-cover bg-center flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 lg:px-20 py-8 sm:py-12">
       
       {/* Left Section (Image) */}
-      <div className="flex justify-center items-center mb-10 lg:mb-0 lg:w-1/2">
-        <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full border border-red-500 flex items-center justify-center overflow-hidden">
+      <div className="flex justify-center items-center mb-8 sm:mb-10 lg:mb-0 lg:w-1/2">
+        <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-96 lg:h-96 rounded-full border border-red-500 flex items-center justify-center overflow-hidden">
           <div className="absolute w-full h-full bg-blue-400 rounded-full border border-red-300 flex items-center justify-center">
             <img
               className="h-full w-full object-cover"
@@ -18,14 +18,14 @@ const About = () => {
       </div>
 
       {/* Right Section (Text + Button) */}
-      <div className="lg:w-1/2 text-center lg:text-left max-w-2xl">
-        <p className="font-bold text-3xl sm:text-4xl lg:text-5xl font-serif mb-2">
+      <div className="lg:w-1/2 text-center lg:text-left max-w-xl sm:max-w-2xl">
+        <p className="font-bold text-2xl sm:text-3xl lg:text-5xl font-serif mb-2">
           Build personalized
         </p>
-        <p className="font-bold text-3xl sm:text-4xl lg:text-5xl font-serif mb-6">
+        <p className="font-bold text-2xl sm:text-3xl lg:text-5xl font-serif mb-6">
           student experiences
         </p>
-        <p className="text-base sm:text-lg lg:text-xl font-serif mb-8">
+        <p className="text-sm sm:text-base lg:text-xl font-serif mb-8 px-2 sm:px-0">
           Our platform provides access to previous year question papers that you
           can practice and solve. Alongside this, you’ll benefit from AI-powered
           learning that generates additional questions related to the papers you
@@ -33,8 +33,8 @@ const About = () => {
           detailed video solutions. This way, you can enhance your learning step
           by step and achieve better results.
         </p>
-        <div className="inline-block">
-          <button className="border-2 border-blue-900 rounded-tl-2xl rounded-br-2xl bg-blue-300 text-black px-6 py-2 font-bold transition duration-200 hover:bg-blue-400 flex items-center gap-2">
+        <div className="w-full sm:w-auto inline-block">
+          <button className="w-full sm:w-auto border-2 border-blue-900 rounded-tl-2xl rounded-br-2xl bg-blue-300 text-black px-6 py-3 font-bold transition duration-200 hover:bg-blue-400 flex items-center justify-center gap-2">
             LEARN NOW <i className="fa-solid fa-arrow-right-long"></i>
           </button>
         </div>
