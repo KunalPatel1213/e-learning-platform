@@ -71,3 +71,5 @@ Spaced repetition for revision.
 Community rooms for peer discussion.
 
 Accessibility features (read-aloud, bilingual content).
+
+restart soon...
