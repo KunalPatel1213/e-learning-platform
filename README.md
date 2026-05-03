@@ -72,4 +72,4 @@ Community rooms for peer discussion.
 
 Accessibility features (read-aloud, bilingual content).
 
-restart soon...
+redesign again..
